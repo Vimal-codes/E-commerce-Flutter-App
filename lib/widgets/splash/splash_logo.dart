@@ -5,19 +5,17 @@ class SplashLogo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Container(
-              height: 320,
-              width: 320,
-              child: const Image(image: AssetImage('assets/images/splash/img.png')),
-            ),
-          ],
-        ),
+    return const Center(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(
+            height: 320,
+            width: 320,
+            child: Image(image: AssetImage('assets/images/splash/img.png')),
+          ),
+        ],
       ),
     );
   }

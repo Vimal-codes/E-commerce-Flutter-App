@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_flutter_app/view/screens/splash_screen.dart';
+import 'package:grocery_flutter_app/view/screens/onboarding%20pages/location_screen.dart';
+import 'package:grocery_flutter_app/view/screens/onboarding%20pages/signup2_screen.dart';
+import 'package:grocery_flutter_app/view/screens/onboarding%20pages/signupOTP_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,9 +13,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: const SplashScreen(),
+      home: EnableLoc(),
     );
   }
 }
